@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cipher Vault Web</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CIPHER VAULT - File En & De</h1>
+
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, msg in messages %}
+      <div class="alert {{ category }}">{{ msg }}</div>
+      {% endfor %} {% endif %} {% endwith %}
+
+      <form method="POST" enctype="multipart/form-data">
+        <label>Enter your Password (length 4 to 10 )</label>
+        <input type="password" name="password" required />
+
+        <label>Choose File from your device</label>
+        <input type="file" name="file" required />
+
+        <button type="submit" name="action" value="encrypt" class="btn encrypt">
+          Encrypt
+        </button>
+        <button type="submit" name="action" value="decrypt" class="btn decrypt">
+          Decrypt
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
