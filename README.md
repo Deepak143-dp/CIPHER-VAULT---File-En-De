@@ -45,7 +45,7 @@ Use apenas em ambientes confiáveis ou para estudo.
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/SEU_USUARIO/ciphervault.git
+git clone https://github.com/Deepak143-dp/CIPHER-VAULT---File-En-De.git
 cd ciphervault
 
 # 2. (Recomendado) Crie um ambiente virtual
